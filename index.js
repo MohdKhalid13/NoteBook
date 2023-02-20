@@ -12,7 +12,7 @@ app.post('/',(req,res) => {
 })
 
 app.use('/api/auth', require('./routers/auth'));
-// app.use('/api/notes', require('./routers/notes'))
+app.use('/api/notes', require('./routers/notes'))
 
 app.listen(PORT , () => {
   console.log(`The BackEnd Is Running On Port ${PORT}`);
